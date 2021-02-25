@@ -21,7 +21,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: Roboto, sans-serif;
-    background-color: #d92950;
+    width: 100%;
 }
 
 
@@ -39,6 +39,7 @@ body {
     align-items: center;
     position: fixed;
     top: 0;
+    z-index: 1;
 }
 
 .menu ul {
@@ -80,6 +81,7 @@ body {
     background-image: url("../img/hero-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
+    width: 100%;
     height: 850px;
 }
 
@@ -103,12 +105,20 @@ h1 {
 .button-header button {
     font-size: 20px;
     height: 65px;
-    border: 2px solid #ff046b;
+    border: none;
     border-radius: 15px;
     font-weight: bold;
     padding: 0 20px;
     color: #d92950;
     cursor: pointer;
+}
+
+.button-header button:nth-child(1) {
+    margin-right: 15px;
+}
+
+.button-header button:nth-child(2) {
+    margin-left: 15px;
 }
 
 .button-header button:hover {
@@ -149,6 +159,7 @@ h1 {
 .img-campus img,
 .kda-2020 img {
     border-radius: 20px;
+    position: relative;
 }
 
 .img-campus img:nth-child(1) {
@@ -172,7 +183,7 @@ h1 {
 }
 
 .text-developper {
-    padding: 0px 40px 500px 80px;
+    padding: 0px 40px 100px 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -180,8 +191,8 @@ h1 {
 }
 
 .text-developper img {
-    width: 70px;
-    height: 80px;
+    width: 50px;
+    height: 70px;
     border-bottom: 2px solid #ff046b;
     padding-bottom: 20px;
 }
@@ -193,14 +204,30 @@ h1 {
     text-align: center;
 }
 
-.logo-haut,
-.logo-bas {
+.position {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.logo-gauche,
+.logo-droite {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     margin-bottom: 20px;
     text-align: center;
+}
+
+.logo-gauche {
+    width: 360px;
+}
+
+.logo-droite {
+    width: 360px;
+    margin-top: -20px;
 }
 
 .langue img {
@@ -208,11 +235,115 @@ h1 {
     height: 70px;
 }
 
-.prix-competitifs {
-    padding-left: 150px;
-}
-
 .horaire img {
     width: 50px;
     height: 70px;
+}
+
+
+/*----------------------- Parteneur --------------------*/
+
+.parteneur {
+    background-color: #d92950;
+    height: 500px;
+}
+
+.logo-parteneur {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.parteneur h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: MontserratBold, sans-serif;
+    color: white;
+    margin-top: 0px;
+}
+
+.logo-parteneur img {
+    width: 100px;
+    margin-top: 60px;
+}
+
+
+/*------------------------------- Section Vos Projets----------------*/
+
+.vos-projets {
+    background-color: #f1f0f3;
+    margin-top: -32px;
+    height: 600px;
+}
+
+.vos-projets h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: MontserratBold, sans-serif;
+    color: #180027;
+}
+
+.text-projets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.vos-projets h2 {
+    text-align: center;
+    font-size: 28px;
+    font-family: MontserratBold, sans-serif;
+    color: #d92950;
+}
+
+.vos-projets p {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: #180027;
+    text-align: center;
+    padding: 0px 30px 0px 30px;
+}
+
+.votre-projet,
+.votre-equipe {
+    width: 550px;
+    height: 300px;
+    background-color: white;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.votre-projet {
+    border-top: 10px solid #ffe64d;
+    margin-left: 80px;
+}
+
+.votre-equipe {
+    border-top: 10px solid #d92950;
+    margin-right: 80px;
+}
+
+.button-projet {
+    text-align: center;
+}
+
+.button-projet button {
+    font-size: 20px;
+    height: 65px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: 0 20px;
+    color: white;
+    cursor: pointer;
+    background-color: #d92950;
+    margin-top: 30px;
+}
+
+.button-projet button:hover {
+    background-color: white;
+    color: #d92950;
+    border: 2px solid #d92950;
 }
