@@ -18,6 +18,16 @@
     src: url("../fonts/Roboto-Regular.ttf");
 }
 
+@font-face {
+    font-family: "UbuntuMono";
+    src: url("../fonts/UbuntuMono-Regular.ttf");
+}
+
+@font-face {
+    font-family: "UbuntuMonoBold";
+    src: url("../fonts/UbuntuMono-Bold.ttf");
+}
+
 * {
     box-sizing: border-box;
 }
@@ -149,6 +159,7 @@ h1 {
 .logos-header img {
     margin-top: 30px;
     height: 40px;
+    opacity: 0.5;
 }
 
 
@@ -361,7 +372,7 @@ h1 {
 .projets-realise {
     background-color: #d92950;
     margin-top: -32px;
-    height: 800px;
+    height: 930px;
 }
 
 .projets-realise h1 {
@@ -377,6 +388,7 @@ h1 {
     align-items: center;
     overflow: hidden;
     width: 100%;
+    height: 700px;
 }
 
 .projets-fait img {
@@ -386,17 +398,22 @@ h1 {
     margin: 40px -40px 0px -40px;
 }
 
-.ads {
+.ads,
+.covid,
+.tandem {
     margin-left: -45px;
 }
 
-.text-ads p:nth-child(1) {
+.text-ads p:nth-child(1),
+.text-covid p:nth-child(1),
+.text-tandem p:nth-child(1) {
     color: white;
     font-family: Montserrat, sans-serif;
     font-size: 11px;
 }
 
-.text-ads p:nth-child(2) {
+.text-ads p:nth-child(2),
+.text-tandem p:nth-child(2) {
     background-color: white;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -411,16 +428,91 @@ h1 {
     padding: 5px 10px 5px 0px;
 }
 
-.text-ads a {
+.text-ads a,
+.text-tandem a {
     color: white;
     text-decoration: none;
 }
 
-.text-ads {
+.text-ads img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-top: 11px;
+}
+
+.text-covid img {
+    width: 20px;
+    height: 20px;
+    position: relative;
+    margin-top: 11px;
+    margin-right: -110px;
+}
+
+.text-tandem img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 11px;
+}
+
+.text-ads .pays {
+    display: flex;
+    flex-direction: row;
+    margin-left: 60px;
+}
+
+.text-covid .pays {
+    display: flex;
+    flex-direction: row;
+    margin-left: 125px;
+}
+
+.text-tandem .pays {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 50px;
+}
+
+.text-ads,
+.text-covid,
+.text-tandem {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-start;
+}
+
+.text-covid p:nth-child(2) {
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 70px;
+    height: 20px;
+    text-align: end;
+    font-size: 11px;
+    font-family: RobotoRegular, sans-serif;
+    color: #d92950;
+    font-weight: bold;
+    margin-left: 90px;
+    padding: 5px 10px 5px 0px;
+}
+
+.text-tandem p:nth-child(2) {
+    background-color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 80px;
+    height: 20px;
+    text-align: end;
+    font-size: 11px;
+    font-family: RobotoRegular, sans-serif;
+    color: #d92950;
+    font-weight: bold;
+    margin-left: 19px;
+    padding: 5px 10px 5px 0px;
 }
 
 .langage {
@@ -428,9 +520,538 @@ h1 {
     height: 30px;
     background-color: #ed0058;
     margin-left: 5px;
+    font-size: 11px;
+    color: white;
+    font-family: UbuntuMono;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .langage img {
-    width: 40px;
-    height: 40px;
+    width: 10px;
+    height: 10px;
+    margin: 0px 0px 0px -225px;
+    position: relative;
+}
+
+.langage-text {
+    position: relative;
+    margin: 0px 0px 0px -440px;
+}
+
+.projets-fait button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: none;
+}
+
+.projets-fait button {
+    width: 25px;
+    height: 25px;
+    font-size: 20px;
+    text-align: center;
+    color: #d92950;
+    margin-left: -9px;
+    margin-top: -5px;
+    font-weight: bold;
+}
+
+
+/*------------------ Section expertise ---------------------*/
+
+.notre-expertise {
+    margin-top: -32px;
+    height: 800px;
+}
+
+.notre-expertise h1 {
+    font-family: MontserratBold, sans-serif;
+    font-size: 40px;
+    color: #424345;
+}
+
+.notre-expertise h2 {
+    font-family: MontserratBold, sans-serif;
+    font-size: 28px;
+    color: white;
+    margin-left: 20px;
+}
+
+.expertise {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 80px;
+}
+
+.hardskills {
+    width: 650px;
+    height: 425px;
+    background-color: #f1f0f3;
+    margin-left: 70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.hardskills-text {
+    height: 70px;
+    background-color: #d92950;
+    margin-top: -22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo-hard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+}
+
+.img-1,
+.img-2,
+.img-3,
+.img-4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.img-1 p,
+.img-2 p,
+.img-3 p,
+.img-4 p {
+    margin-top: -10px;
+    text-align: center;
+    color: #424345;
+    font-family: UbuntuMono, monospace;
+    font-size: 20px;
+}
+
+.logo-hard img {
+    width: 50px;
+    height: 70px;
+}
+
+.logo-nodejs img,
+.logo-mongodb img,
+.logo-graphql img {
+    margin-left: 10px;
+}
+
+.logo-js img {
+    margin-left: 26px;
+}
+
+.logo-vuejs img,
+.logo-laravel img {
+    margin-left: 5px;
+}
+
+.softskills {
+    width: 450px;
+    height: 425px;
+    background-color: #f1f0f3;
+    margin-right: 70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.softskills-text {
+    height: 70px;
+    background-color: #180027;
+    margin-top: -22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.list-soft {
+    width: 400px;
+    height: 280px;
+    background-color: #dfdee1;
+    border-radius: 20px;
+    margin-top: 425px;
+    margin-left: -140px;
+    color: #424345;
+    font-family: UbuntuMono, monospace;
+    font-size: 20px;
+    padding: 20px 50px 50px 50px;
+    line-height: 31px;
+}
+
+
+/*----------------------- Section prêt ---------------*/
+
+.pret {
+    background-color: #ae3753;
+    height: 660px;
+}
+
+.pret h1 {
+    font-family: MontserratBold, sans-serif;
+    font-size: 40px;
+    color: #FFFFFF;
+}
+
+.planification {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.planifier-appel div {
+    width: 70px;
+    height: 70px;
+    border: 1px solid white;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.planifier-appel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 180px;
+}
+
+.planifier-appel p {
+    color: white;
+    font-family: UbuntuMonoBold, monospace;
+    font-size: 20px;
+}
+
+.planifier-appel img:nth-child(1) {
+    width: 35px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.arrow-appel img {
+    width: 35px;
+    margin-top: -5px;
+    margin-left: -120px;
+}
+
+.arrow-profils img {
+    width: 35px;
+    margin-top: -5px;
+    margin-left: -130px;
+}
+
+.arrow-video img {
+    width: 35px;
+    margin-top: -5px;
+    margin-left: -105px;
+}
+
+.pret button {
+    font-size: 20px;
+    height: 65px;
+    border: none;
+    border-radius: 15px;
+    font-family: RobotoRegular, sans-serif;
+    font-weight: bold;
+    padding: 0 20px;
+    color: white;
+    cursor: pointer;
+    background-color: #d92950;
+    margin: 100px 0px 100px 600px;
+}
+
+.pret button:hover {
+    background-color: #ae3753;
+    color: white;
+    border: 2px solid white;
+}
+
+
+/*----------------------- Section Creation emploie ---------------*/
+
+.creation-emploie {
+    background-color: #f1f0f3;
+    height: 950px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.creation-emploie h1 {
+    font-family: MontserratBold, sans-serif;
+    font-size: 40px;
+    color: #424345;
+    text-align: left;
+}
+
+.creation-emploie p {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: #424345;
+    text-align: left;
+    line-height: 24px;
+}
+
+.emploie-qualite {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    margin-top: -282px;
+    margin-left: 80px;
+    margin-right: 10px;
+}
+
+.emploie-qualite img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.emploie-qualite span {
+    color: #d92950;
+}
+
+.avantages {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    margin-top: 250px;
+    margin-left: -10px;
+}
+
+.avantages img {
+    width: 50px;
+}
+
+.salaire,
+.sante,
+.travail,
+.training {
+    width: 270px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 30px 20px 30px 20px;
+    padding: 20px;
+}
+
+.avantages h2 {
+    font-family: MontserratBold, sans-serif;
+    font-size: 24px;
+    color: #424345;
+    text-align: left;
+}
+
+
+/*------------------ Section Kinshasa Digital dans les medias -----------------*/
+
+.kd-medias {
+    margin-top: -32px;
+    background-color: #111111;
+    height: 370px;
+}
+
+.kd-medias h1 {
+    font-family: MontserratBold, sans-serif;
+    font-size: 40px;
+    color: white;
+}
+
+.medias {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/*------------------ Section Soutient -----------------*/
+
+.soutient {
+    margin-top: -33px;
+    height: 1120px;
+}
+
+.soutient h1 {
+    font-family: MontserratBold, sans-serif;
+    font-size: 40px;
+    color: #424345;
+}
+
+.soutient p {
+    margin-left: 10px;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    color: #424345;
+    text-align: left;
+    line-height: 24px;
+}
+
+.img-soutient {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.img-soutient img {
+    width: 270px;
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.text-soutient {
+    width: 270px;
+    height: 350px;
+}
+
+.commun {
+    width: 270px;
+    height: 350px;
+    margin-top: 50px
+}
+
+.top {
+    margin-top: 72px;
+}
+
+
+/*------------------ Section Footer -----------------*/
+
+footer {
+    height: 680px;
+    background-color: #2d2d2d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 100px;
+}
+
+address {
+    font-style: normal;
+}
+
+.footer-gauche {
+    width: 55%;
+    padding: 100px 0px 50px 90px;
+    margin-left: -20px;
+    font-style: normal;
+    line-height: 33.6px;
+    letter-spacing: normal;
+    font-size: 22.4px;
+    font-family: RobotoRegular, sans-serif;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer a {
+    text-decoration: none;
+    color: #d92950;
+}
+
+footer a:hover {
+    border-bottom: 2px solid #ff046b;
+}
+
+.lien-site {
+    margin-top: 30px;
+}
+
+.lien-site a img {
+    width: 20px;
+}
+
+.lien-site .modif {
+    width: 30px;
+}
+
+.lien-site a:nth-child(2),
+.lien-site a:nth-child(3) {
+    padding-left: 30px;
+}
+
+.footer-droite {
+    width: 42%;
+    height: 100px;
+    line-height: 33.6px;
+    font-size: 22.4px;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 100px;
+    margin-left: -80px;
+}
+
+.footer-droite button {
+    font-size: 16px;
+    font-family: RobotoRegular, sans-serif;
+    height: 55px;
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    font-weight: bold;
+    padding: 0 30px;
+    background-color: #d92950;
+    color: white;
+    cursor: pointer;
+}
+
+.footer-droite button:hover {
+    color: #180027;
+    background-color: #2d2d2d;
+}
+
+.footer-droite input {
+    height: 55px;
+    border: none;
+    width: 400px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-family: RobotoRegular, sans-serif;
+    color: #495057;
+}
+
+.footer-droite input:focus {
+    outline: #ed0057;
+}
+
+.footer-droite p a {
+    font-size: 16px;
+    font-family: MontserratBold, sans-serif;
+    color: white;
+}
+
+.text-footer {
+    padding-top: 210px;
+}
+
+form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
