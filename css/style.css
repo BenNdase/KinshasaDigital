@@ -937,6 +937,126 @@ h1 {
 }
 
 
+/*------------------ Section Formulaire -----------------*/
+
+.formulaire-contact {
+    height: 1000px;
+    background-color: #1d1b25;
+}
+
+.formulaire-text {
+    text-align: center;
+    padding-top: -80px;
+}
+
+.formulaire-text h1 {
+    font-size: 48px;
+    font-family: MontserratBold, sans-serif;
+    color: rgba(255, 255, 255, 0.856);
+}
+
+.formulaire-text p {
+    font-size: 16px;
+    font-family: MontserratBold, sans-serif;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.formulaire-text a {
+    color: #D92950;
+    text-decoration: none;
+}
+
+.formulaire-text a:hover {
+    border-bottom: 2px solid #D92950;
+}
+
+.form,
+.form-demande {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.form-demande {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.titre,
+.activite {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titre label,
+.activite label,
+.form-demande label {
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.795);
+}
+
+.titre input,
+.titre select,
+.activite input,
+.activite select,
+.form-demande select,
+.form-demande textarea {
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    color: #495057;
+    font-family: RobotoRegular, sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+.form-demande textarea {
+    height: 70px;
+    margin-top: 20px;
+}
+
+.form-demande p {
+    font-size: 16px;
+    font-family: Montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.795);
+    padding-right: 30px;
+}
+
+.form-demande a {
+    color: #d92950;
+    text-decoration: none;
+}
+
+.form-demande a:hover {
+    border-bottom: 2px solid #d92950;
+}
+
+.form-demande button {
+    font-size: 16px;
+    font-family: RobotoRegular, sans-serif;
+    width: 10%;
+    height: 55px;
+    border: none;
+    border-radius: 15px;
+    font-weight: bold;
+    padding: auto;
+    background-color: #d92950;
+    color: white;
+    cursor: pointer;
+}
+
+.form-demande button:hover {
+    border: 2px solid #d92950;
+    background-color: #1d1b25;
+}
+
+
 /*------------------ Section Footer -----------------*/
 
 footer {
@@ -1050,7 +1170,7 @@ footer a:hover {
     padding-top: 210px;
 }
 
-form {
+.footer-form form {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
