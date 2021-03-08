@@ -55,8 +55,12 @@ body {
     z-index: 1;
 }
 
+.logo {
+    width: 30%;
+}
+
 .menu ul {
-    width: 100%;
+    width: 70%;
     list-style: none;
     float: right;
     display: flex;
@@ -81,10 +85,16 @@ body {
 
 .menu ul li:nth-child(1) {
     border-bottom: 2px solid #ff046b;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 .menu ul>li:hover {
     border-bottom: 2px solid #ff046b;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
 h1 {
@@ -98,6 +108,7 @@ h1 {
 .text-header {
     background-image: url("../img/hero-background.jpg");
     background-size: cover;
+    width: 100%;
     height: 800px;
     margin-top: 90px;
 }
@@ -114,33 +125,36 @@ h1 {
 }
 
 .button-header {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 42.6%;
+    margin: auto;
 }
 
-.button-header button {
+.button-header .button {
     font-size: 20px;
     height: 65px;
     border: none;
-    border-radius: 15px;
     font-weight: bold;
-    padding: 0 20px;
     cursor: pointer;
+}
+
+.text-header a {
     color: #d92950;
+    text-decoration: none;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 15px;
+    border: 2px solid white;
 }
 
-.button-header button:nth-child(1) {
-    margin-right: 10px;
-}
-
-.button-header button:nth-child(2) {
-    margin-left: 10px;
-}
-
-.button-header button:hover {
-    background-color: #d9294f00;
+.button-header a:hover {
+    background-color: rgba(0, 0, 0, 0);
     color: white;
     border: 2px solid white;
-    margin: 0px;
 }
 
 .text-header p {
@@ -171,10 +185,15 @@ h1 {
     padding-top: 100px;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 100px;
 }
 
-.img-campus img,
-.kda-2020 img {
+.img-campus {
+    width: 40%;
+}
+
+.img-campus img {
     border-radius: 20px;
     position: relative;
 }
@@ -200,7 +219,7 @@ h1 {
 }
 
 .text-developper {
-    padding: 0px 40px 100px 80px;
+    width: 57%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -222,9 +241,11 @@ h1 {
 }
 
 .position {
+    width: 90%;
+    height: 300px;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -234,7 +255,6 @@ h1 {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 20px;
     text-align: center;
 }
 
@@ -243,8 +263,8 @@ h1 {
 }
 
 .logo-droite {
-    width: 360px;
-    margin-top: -20px;
+    width: 300px;
+    margin: -20px 0px 0px 50px;
 }
 
 .langue img {
@@ -269,6 +289,7 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
     overflow: hidden;
 }
 
@@ -281,8 +302,12 @@ h1 {
 }
 
 .logo-parteneur img {
-    width: 100px;
+    width: 150px;
     margin-top: 60px;
+}
+
+.orange-logo img {
+    width: 80px;
 }
 
 
@@ -298,7 +323,7 @@ h1 {
     text-align: center;
     font-size: 40px;
     font-family: MontserratBold, sans-serif;
-    color: #180027;
+    color: #321c41;
 }
 
 .text-projets {
@@ -319,7 +344,7 @@ h1 {
 .vos-projets p {
     font-family: Montserrat, sans-serif;
     font-size: 16px;
-    color: #180027;
+    color: #321c41;
     text-align: center;
     padding: 0px 30px 0px 30px;
 }
@@ -345,23 +370,24 @@ h1 {
 
 .button-projet {
     text-align: center;
+    margin-top: 50px;
 }
 
-.button-projet button {
+.button-projet a {
     font-size: 20px;
     height: 65px;
-    border: none;
+    padding: 20px;
+    border: 2px solid #d92950;
     border-radius: 15px;
     font-family: RobotoRegular, sans-serif;
     font-weight: bold;
-    padding: 0 20px;
     color: white;
-    cursor: pointer;
+    text-decoration: none;
     background-color: #d92950;
     margin-top: 30px;
 }
 
-.button-projet button:hover {
+.button-projet a:hover {
     background-color: white;
     color: #d92950;
     border: 2px solid #d92950;
@@ -528,6 +554,11 @@ h1 {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+}
+
+.technos img {
+    position: relative;
+    margin-left: -55px;
 }
 
 .langage img {
@@ -701,12 +732,24 @@ h1 {
     font-family: MontserratBold, sans-serif;
     font-size: 40px;
     color: #FFFFFF;
+    text-align: center;
 }
 
 .planification {
+    width: 88%;
+    position: relative;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    align-items: center;
+    margin: -30px auto;
+}
+
+.ordre {
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -744,37 +787,44 @@ h1 {
 
 .arrow-appel img {
     width: 35px;
-    margin-top: -5px;
-    margin-left: -120px;
+    margin-left: -30px;
 }
 
 .arrow-profils img {
     width: 35px;
-    margin-top: -5px;
-    margin-left: -130px;
+    margin-left: -40px;
 }
 
 .arrow-video img {
     width: 35px;
     margin-top: -5px;
-    margin-left: -105px;
+    margin-left: -10px;
 }
 
-.pret button {
+.planif-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.planif-button a {
     font-size: 20px;
     height: 65px;
     border: none;
     border-radius: 15px;
+    border: 2px solid #d92950;
     font-family: RobotoRegular, sans-serif;
     font-weight: bold;
-    padding: 0 20px;
+    padding: 20px;
     color: white;
+    text-decoration: none;
     cursor: pointer;
     background-color: #d92950;
-    margin: 100px 0px 100px 600px;
 }
 
-.pret button:hover {
+.planif-button a:hover {
     background-color: #ae3753;
     color: white;
     border: 2px solid white;
@@ -1168,7 +1218,7 @@ footer a:hover {
 }
 
 .text-footer {
-    padding-top: 210px;
+    padding-top: 200px;
 }
 
 .footer-form form {
