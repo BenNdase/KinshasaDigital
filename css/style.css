@@ -102,6 +102,11 @@ h1 {
     padding-top: 135px;
 }
 
+h2 {
+    text-align: center;
+    padding-top: 135px;
+}
+
 
 /*----------------------- text header -------------------------*/
 
@@ -210,7 +215,7 @@ h1 {
     margin: -200px 0 0 200px;
 }
 
-.text-developper h1 {
+.text-developper h2 {
     font-family: MontserratBold, sans-serif;
     font-size: 40px;
     color: #424345;
@@ -293,7 +298,7 @@ h1 {
     overflow: hidden;
 }
 
-.parteneur h1 {
+.parteneur h2 {
     text-align: center;
     font-size: 40px;
     font-family: MontserratBold, sans-serif;
@@ -319,7 +324,7 @@ h1 {
     height: 600px;
 }
 
-.vos-projets h1 {
+.vos-projets h2 {
     text-align: center;
     font-size: 40px;
     font-family: MontserratBold, sans-serif;
@@ -334,7 +339,7 @@ h1 {
     margin-top: 50px;
 }
 
-.vos-projets h2 {
+.vos-projets h3 {
     text-align: center;
     font-size: 28px;
     font-family: MontserratBold, sans-serif;
@@ -402,7 +407,7 @@ h1 {
     height: 930px;
 }
 
-.projets-realise h1 {
+.projets-realise h2 {
     font-family: MontserratBold, sans-serif;
     font-size: 40px;
     color: white;
@@ -542,7 +547,8 @@ h1 {
     padding: 5px 10px 5px 0px;
 }
 
-.langage {
+.langage,
+.technos {
     width: 320px;
     height: 30px;
     background-color: #ed0058;
@@ -556,11 +562,6 @@ h1 {
     align-items: center;
 }
 
-.technos img {
-    position: relative;
-    margin-left: -55px;
-}
-
 .langage img {
     width: 10px;
     height: 10px;
@@ -571,6 +572,11 @@ h1 {
 .langage-text {
     position: relative;
     margin: 0px 0px 0px -440px;
+}
+
+.technos .langage-text {
+    position: relative;
+    margin: 0px 0px 0px -515px;
 }
 
 .projets-fait button {
@@ -599,13 +605,13 @@ h1 {
     height: 800px;
 }
 
-.notre-expertise h1 {
+.notre-expertise h2 {
     font-family: MontserratBold, sans-serif;
     font-size: 40px;
     color: #424345;
 }
 
-.notre-expertise h2 {
+.notre-expertise h3 {
     font-family: MontserratBold, sans-serif;
     font-size: 28px;
     color: white;
@@ -728,7 +734,7 @@ h1 {
     height: 660px;
 }
 
-.pret h1 {
+.pret h2 {
     font-family: MontserratBold, sans-serif;
     font-size: 40px;
     color: #FFFFFF;
@@ -842,7 +848,7 @@ h1 {
     align-items: center;
 }
 
-.creation-emploie h1 {
+.creation-emploie h2 {
     font-family: MontserratBold, sans-serif;
     font-size: 40px;
     color: #424345;
@@ -900,11 +906,16 @@ h1 {
     padding: 20px;
 }
 
-.avantages h2 {
+.avantages h3 {
     font-family: MontserratBold, sans-serif;
     font-size: 24px;
     color: #424345;
     text-align: left;
+    margin-top: -1px;
+}
+
+.avantages p {
+    margin-top: -10px;
 }
 
 
@@ -916,7 +927,7 @@ h1 {
     height: 370px;
 }
 
-.kd-medias h1 {
+.kd-medias h2 {
     font-family: MontserratBold, sans-serif;
     font-size: 40px;
     color: white;
@@ -939,7 +950,7 @@ h1 {
     height: 1120px;
 }
 
-.soutient h1 {
+.soutient h2 {
     font-family: MontserratBold, sans-serif;
     font-size: 40px;
     color: #424345;
@@ -1000,7 +1011,7 @@ h1 {
     padding-top: -80px;
 }
 
-.formulaire-text h1 {
+.formulaire-text h2 {
     font-size: 48px;
     font-family: MontserratBold, sans-serif;
     color: rgba(255, 255, 255, 0.856);
@@ -1111,7 +1122,7 @@ h1 {
 /*------------------ Section Footer -----------------*/
 
 footer {
-    height: 680px;
+    height: 600px;
     background-color: #2d2d2d;
     display: flex;
     flex-direction: row;
@@ -1193,8 +1204,9 @@ footer a:hover {
 }
 
 .footer-droite button:hover {
-    color: #180027;
-    background-color: #2d2d2d;
+    color: #d92950;
+    background-color: white;
+    border: 2px solid #d92950
 }
 
 .footer-droite input {
@@ -1218,7 +1230,7 @@ footer a:hover {
 }
 
 .text-footer {
-    padding-top: 200px;
+    padding-top: 160px;
 }
 
 .footer-form form {

@@ -307,7 +307,7 @@ body {
 /*------------------ Section Footer -----------------*/
 
 footer {
-    height: 680px;
+    height: 600px;
     background-color: #2d2d2d;
     display: flex;
     flex-direction: row;
@@ -389,8 +389,9 @@ footer a:hover {
 }
 
 .footer-droite button:hover {
-    color: #180027;
-    background-color: #2d2d2d;
+    color: #d92950;
+    background-color: white;
+    border: 2px solid #d92950
 }
 
 .footer-droite input {
@@ -414,7 +415,7 @@ footer a:hover {
 }
 
 .text-footer {
-    padding-top: 200px;
+    padding-top: 160px;
 }
 
 .footer-form form {
