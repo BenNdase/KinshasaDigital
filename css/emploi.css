@@ -38,6 +38,14 @@ body {
     font-family: Roboto, sans-serif;
 }
 
+a {
+    position: relative;
+}
+
+a:hover:after {
+    width: 100%;
+}
+
 
 /*------------------------------- Le menu -------------------------*/
 
@@ -55,8 +63,12 @@ body {
     z-index: 1;
 }
 
+.logo {
+    width: 30%;
+}
+
 .menu ul {
-    width: 100%;
+    width: 70%;
     list-style: none;
     float: right;
     display: flex;
@@ -73,18 +85,36 @@ body {
     vertical-align: baseline;
     letter-spacing: normal;
     font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.menu .active a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #ff046b;
+}
+
+.menu a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #ff046b;
+    transition: width 500ms ease;
+}
+
+.menu a:hover:after {
+    width: 100%;
 }
 
 .menu ul>li {
     margin-right: 38px;
-}
-
-.menu ul li:nth-child(3) {
-    border-bottom: 2px solid #ff046b;
-}
-
-.menu ul>li:hover {
-    border-bottom: 2px solid #ff046b;
 }
 
 
