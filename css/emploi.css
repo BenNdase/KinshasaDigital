@@ -223,10 +223,10 @@ a:hover:after {
 
 .formulaire-text {
     text-align: center;
-    padding-top: 80px;
+    padding-top: -80px;
 }
 
-.formulaire-text h1 {
+.formulaire-text h2 {
     font-size: 48px;
     font-family: MontserratBold, sans-serif;
     color: rgba(255, 255, 255, 0.856);
@@ -241,10 +241,23 @@ a:hover:after {
 .formulaire-text a {
     color: #D92950;
     text-decoration: none;
+    padding-bottom: 3px;
+    position: relative;
 }
 
-.formulaire-text a:hover {
-    border-bottom: 2px solid #D92950;
+.formulaire-text a:hover:after {
+    width: 100%;
+}
+
+.formulaire-text a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #D92950;
+    transition: width 500ms ease;
 }
 
 .form,
@@ -308,10 +321,23 @@ a:hover:after {
 .form-demande a {
     color: #d92950;
     text-decoration: none;
+    padding-bottom: 1px;
+    position: relative;
 }
 
-.form-demande a:hover {
-    border-bottom: 2px solid #d92950;
+.form-demande a:hover:after {
+    width: 100%;
+}
+
+.form-demande a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #D92950;
+    transition: width 500ms ease;
 }
 
 .form-demande button {
@@ -367,10 +393,23 @@ address {
 footer a {
     text-decoration: none;
     color: #d92950;
+    padding-bottom: 1px;
+    position: relative;
 }
 
-footer a:hover {
-    border-bottom: 2px solid #ff046b;
+footer a:hover:after {
+    width: 100%;
+}
+
+footer a:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #D92950;
+    transition: width 500ms ease;
 }
 
 .lien-site {
@@ -379,6 +418,7 @@ footer a:hover {
 
 .lien-site a img {
     width: 20px;
+    border-bottom: 2px solid #2d2d2d;
 }
 
 .lien-site .modif {
